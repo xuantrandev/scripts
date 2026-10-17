@@ -81,6 +81,8 @@ One-shot cron example (every 5 minutes):
 
 ```bash
 */5 * * * * /path/to/codex_limit_check.sh --wait 150 >> ~/.cache/codex_limit_check/cron.log 2>&1
+
+*/5 * * * * /home/ubuntu/solarwebapp/myscripts/codex_limit_check.sh --wait 150 >> ~/.cache/codex_limit_check/cron.log 2>&1
 ```
 
 Exit codes: `0` ok (or kick sent), `1` runtime/kick failure, `2` usage or
